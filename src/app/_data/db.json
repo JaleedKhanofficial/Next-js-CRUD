@@ -1,0 +1,17 @@
+{
+    "contacts" : [{
+        "id" : "1",
+        "name" : "juniad khan",
+        "email" : "junaid@gmail.com",
+        "phone" : "123456789",
+        "userId" : "1"
+    }],
+
+    "users": [{
+        "id" : "1",
+        "name" : "ali",
+        "email" : "ali@gmail.com",
+        "password" : "1234567"
+    }]
+
+}
