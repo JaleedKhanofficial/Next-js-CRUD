@@ -7,8 +7,7 @@ const LogOutButton = () => {
     const handlerLogout = async () => {
         try{
             await logoutAction();
-            // the redirect happens in the server action
-            // this client-side redirection is a fallback
+            // the redirect happens in the server action // this client-side redirection is a fallback
             router.push("/login");
             router.refresh();
 
