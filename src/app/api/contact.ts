@@ -8,6 +8,11 @@ export const getContacts = async (userId: string) => {
     return response.data;
 };
 
+export const getcontactsById = async (id:string) => {
+    const response = await axios.get(`${API_URL}/contacts/${id}`);
+    return response.data;
+};
+ 
 export const createContact = async (contact: ContactType) => {
     const response = await axios.post(`${API_URL}/contacts`,contact);
     return response.data;
