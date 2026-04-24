@@ -19,7 +19,7 @@ export const loginAction = async (formData: FormData) => {
         );
         const user : UserType = response.data[0];
         if (!user) throw new Error("Invalid Credentials");
-        await setSession({name : user.name, email : user.email, id : user.id});
+        await setSession({name: user.name, email: user.email, id: user.id});
     } catch(error){
         unstable_rethrow(error);
         if (error instanceof Error) {
