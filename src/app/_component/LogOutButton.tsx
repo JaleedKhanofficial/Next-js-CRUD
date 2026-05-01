@@ -3,6 +3,7 @@ import React from "react";
 import { logoutAction } from "../actions/auth";
 import { useRouter } from "next/navigation";
 const LogOutButton = () => {
+
     const router = useRouter();
     const handlerLogout = async () => {
         try{
